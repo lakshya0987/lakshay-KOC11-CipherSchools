@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="Images/restaurant.png" type="image/x-icon">
+    <title>Reservation</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.reserve_first{
+    background: url('Images/food_bg.jpg') 10% 3% no-repeat;
+    height: 65%;
+    background-size: cover;
+    color: white;
+}
+
+.reserve_first .head{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    font-size: 90px;
+}
+
+.reserve_main{
+    height: 85%;
+    padding: 0px 14%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.reserve_main .part{
+    padding: 60px 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.reserve_main .form h2{
+    color: #e7272d;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.reserve_main .form h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+}
+.reserve_main .form div{
+    display: flex;
+    margin: 40px 0px;
+    font-size: 18px;
+}
+.reserve_main .form form .sec{
+    margin: 15px 10px;
+}  
+
+.reserve_main .form form input{
+    padding: 10px;
+    border: 1px solid #e7272d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    color: #e7272d;
+}
+.reserve_main .form form select option{
+    font-size: 17px;
+    color: #e7272d;
+
+}
+.reserve_main .form form select, .reserve_main .form form .date, .reserve_main .form form .time{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid #e7272d;
+    padding: 10px 5px;
+    width: 225px;
+    color: #e7272d;
+    
+}
+
+.reserve_main .form form button{
+    margin-left: 10px;
+    padding: 14px 25px;
+    background-color: #e7272d;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+.reserve_main .form form button:hover{
+    background-color: black;
+}
+.reserve_main .avail>div{
+    border: 2px dashed black;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(243, 228, 228);
+}
+
+.reserve_main .avail .st{
+    font-size: 20px ;
+    margin: 10% 0px;
+}
+
+.reserve_main .avail .st h2{
+    color: #e7272d;
+    font-style: italic;
+    padding: 5px 0px;
+}
+
+.reserve_main .avail .para{
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+.reserve_main .avail .para p{
+    padding: 5px 0px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="reserve_first">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Images/restaurant.png" alt="logo">
+                <p>Lakshya's Restaurant</p>
+            </div>
+    
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="Reservation.html">Reservation</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <h1 class="head">Reservation</h1>
+
+    </div>
+
+    <div class="reserve_main">
+        <div class="part form">
+            <h2>Reservation</h2>
+            <h1>Reserve Your Seat for Betterment</h1>
+
+            <form action="/backend.php">
+                <div>
+                    <section class="sec">
+                        <label for="name">Name</label><br>
+                        <input type="text" autocomplete="off" id="name" placeholder="Name">
+                    </section>
+                    <section class="sec">
+                        <label for="email">Email</label><br>
+                        <input type="email"  autocomplete="off" id="email" placeholder="Email">
+                    </section>
+                    <section class="sec">
+                        <label for="phone">Phone</label><br>
+                        <input type="number"  autocomplete="off" id="phone" placeholder="Phone">
+                    </section>
+                </div>
+
+                <div>
+                    <section class="sec">
+                        <label for="persons">Number of Persons</label><br>
+                        <select name="persons" id="persons">
+                            <option value="1">1 Person</option>
+                            <option value="1">2 Persons</option>
+                            <option value="1">3 Persons</option>
+                            <option value="1">4 Persons</option>
+                            <option value="1">5+ Persons</option>
+                        </select>
+                    </section>
+                    <section class="sec">
+                        <label for="date">Date</label><br>
+                        <input type="date" name="date" id="date" class="date">
+                    </section>
+                    <section class="sec">
+                        <label for="time">Time</label><br>
+                        <input type="time" name="time" id="time" class="time">
+                    </section>
+                </div>
+
+                
+                <button>Reserve Now</button>
+                
+                      
+            </form>
+        </div>
+        <div class="part avail">
+            <div>
+                <div class="st">
+                    <h2>Check availability</h2>
+                    <h1>Opening Times</h1>
+                </div>
+
+                <div class="para">
+                    <p>Monday - Thursday</p>
+                    <p class="time">9.00-12.00</p>
+                </div>
+
+                <div class="para">
+                    <p>Friday - Sunday</p>
+                    <p class="time">2.00-8.00</p>
+                </div>
+
+                <div class="st">
+                    <h2>Call Us For</h2>
+                    <h1>00 11223344</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_div">
+            <h1 class="footer_h1">ADDRESS:</h1>
+            <p class="footer_para">Lakshya's Restaurant</p>
+            <p class="footer_para">G.T. Road Phagwara, Punjab 144603</p>
+        </div>
+
+        <div class="footer_div">
+            <h1 class="footer_h1">RESERVATION:</h1>
+            <p class="footer_para">000-111-222</p>
+            <p class="footer_para">contact@Lakshya's Restaurant.com</p>
+        </div>
+
+        <div class="footer_div">
+            <h1 class="footer_h1">OPEN HOURS:</h1>
+            <p class="footer_para">Monday - Friday: 10AM - 11PM</p>
+            <p class="footer_para">Saturday - Sunday: 9AM - 1PM</p>
+        </div>
+
+        <div class="footer_div one">
+            <p class="footer_para">Copywrite &copy All rigths reserved. Designed and developed by Lakshya</p>
+        </div>
+    </footer>
+</body>
+</html>

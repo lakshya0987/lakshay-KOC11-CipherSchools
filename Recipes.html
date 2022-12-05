@@ -1,0 +1,402 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="Images/restaurant.png" type="image/x-icon">
+    <title>Recipes</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.recipes_first {
+    background: url('Images/food_bg.jpg') 10% 3% no-repeat;
+    background-size: cover;
+    color: white;
+    height: 65%;
+}
+
+.recipes_first .head {
+    font-size: 90px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.main,
+.main2 {
+    padding: 6% 13%;
+}
+
+.main .content {
+    text-align: center;
+}
+
+.main .content h2,
+.main2 .content2 h2 {
+    color: #e7272d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding: 10px 0px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.main .content h1,
+.main2 .content2 h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px 0px;
+    font-size: 45px;
+    width: 60%;
+    margin: auto;
+}
+
+.main .content .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+    margin: 20px 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main .content .menu .items {
+    border: 2px dashed #e7272d;
+    padding: 5px 30px;
+    display: flex;
+    background-color: #efdfdf;
+    text-align: justify;
+    box-shadow: 1px 1px 5px rgb(106, 106, 106);
+}
+
+.main .content .menu .items:hover {
+    background-color: white;
+}
+
+.main .content .menu .items img {
+    border: 2px solid white;
+    width: 25%;
+}
+
+.main .content .menu .items section {
+    margin: 0px 25px;
+}
+
+.main .content .menu .items section h3 {
+    font-size: 22px;
+}
+
+.main .content .menu .items section h3 span {
+    color: #e7272d;
+}
+
+.main .content .menu .items section p {
+    font-size: 18px;
+    padding: 5px 0px;
+}
+
+.main .content .menu .items section button {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #e7272d;
+    color: white;
+    border-style: none;
+}
+
+.main .content .menu .items section button:hover {
+    background-color: black;
+}
+
+/* Main Dishes*/
+
+.main2 {
+    background-color: rgb(244, 240, 240);
+}
+
+.main2 .content2 .menu2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.main2 .content2 .menu2 .mitems {
+    height: 4.6in;
+    background-color: #efdfdf;
+    box-shadow: 2px 2px 7px rgb(106, 106, 106);
+}
+
+.main2 .content2 .menu2 .mitems:hover {
+    background-color: white;
+}
+
+.main2 .content2 .menu2 .mitems img {
+    width: 100%;
+    height: 50%;
+}
+
+.main2 .content2 .menu2 .mitems section {
+    margin-top: 30px;
+    padding: 0px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main2 .content2 .menu2 .mitems section h3 {
+    font-size: 22px;
+}
+
+.main2 .content2 .menu2 .mitems section h3 span {
+    color: #e7272d;
+}
+
+.main2 .content2 .menu2 .mitems section p {
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.main2 .content2 .menu2 .mitems section button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #e7272d;
+    color: white;
+    border-style: none;
+}
+
+.main2 .content2 .menu2 .mitems section button:hover {
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="recipes_first">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Images/restaurant.png" alt="logo">
+                <p>Lakshya's Restaurant</p>
+            </div>
+    
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="Reservation.html">Reservation</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <h1 class="head">Food Menu</h1>
+
+    </div>
+    
+    <div class="main"> 
+
+        <div class="content">
+
+            <h2>Food Menu</h2>
+            <h1>We Provide Quality Food. We Care About Your Health</h1>
+
+            <div class="menu">
+
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x200/?food" alt="item1"> 
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x201/?food" alt="item2">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+                
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x202/?food" alt="item3">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x203/?food" alt="item4">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x204/?food" alt="item5">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x205/?food" alt="item6">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x206/?food" alt="item7">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x207/?food" alt="item8">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x208/?food" alt="item9"> 
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+                
+                <div class="items">
+                    <img src="https://source.unsplash.com/200x209/?food" alt="item10">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>Add to cart</button>
+                    </section>
+                </div>
+                
+            </div>
+
+        </div> 
+
+    </div>
+
+    <div class="main2">
+
+        <div class="content2">
+            <h2>Main Dishes</h2>
+            <h1>We Provide Quality Food. We Care About Your Health</h1>
+
+            <div class="menu2">
+
+                <div class="mitems">
+                    <img src="https://source.unsplash.com/750x750/?food" alt="mitem1">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>ADD TO CART</button>
+                    </section>
+                </div>
+
+                <div class="mitems">
+                    <img src="https://source.unsplash.com/750x751/?food" alt="mitem2">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>ADD TO CART</button>
+                    </section>
+                </div>
+                <div class="mitems">
+                    <img src="https://source.unsplash.com/750x752/?food" alt="mitem3">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>ADD TO CART</button>
+                    </section>
+                </div>
+
+                <div class="mitems">
+                    <img src="https://source.unsplash.com/750x753/?food" alt="mitem4">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>ADD TO CART</button>
+                    </section>
+                </div>
+
+                <div class="mitems">
+                    <img src="https://source.unsplash.com/750x754/?food" alt="mitem5">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>ADD TO CART</button>
+                    </section>
+                </div>
+
+                <div class="mitems">
+                    <img src="https://source.unsplash.com/750x755/?food" alt="mitem6">
+                    <section>
+                        <h3>Item Name - <span>23 Rs</span></h3>
+                        <p>Chinese</p>
+                        <button>ADD TO CART</button>
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer_div">
+            <h1 class="footer_h1">ADDRESS:</h1>
+            <p class="footer_para">Lakshya's Restaurant</p>
+            <p class="footer_para">G.T. Road Phagwara, Punjab 144603</p>
+        </div>
+
+        <div class="footer_div">
+            <h1 class="footer_h1">RESERVATION:</h1>
+            <p class="footer_para">000-111-222</p>
+            <p class="footer_para">contact@Lakshya's Restaurant.com</p>
+        </div>
+
+        <div class="footer_div">
+            <h1 class="footer_h1">OPEN HOURS:</h1>
+            <p class="footer_para">Monday - Friday: 10AM - 11PM</p>
+            <p class="footer_para">Saturday - Sunday: 9AM - 1PM</p>
+        </div>
+
+        <div class="footer_div one">
+            <p class="footer_para">Copywrite &copy All rigths reserved. Designed and developed by Lakshya</p>
+        </div>
+    </footer>
+
+</body>
+</html>

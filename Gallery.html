@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="Images/restaurant.png" type="image/x-icon">
+    <title>Gallery</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery_first {
+    color: white;
+    height: 65%;
+    background: url('Images/food_bg.jpg') 10% 3% no-repeat;
+    background-size: cover;
+}
+
+.gallery_first .head {
+    font-size: 100px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.gmain {
+    height: 65%;
+    text-align: center;
+    padding: 6% 12%;
+}
+
+.gmain .headings {
+    width: 60%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto;
+}
+
+.gmain .headings h3 {
+    color: #e7272d;
+    font-size: 28px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.gmain .headings h1 {
+    font-size: 45px;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.gmain .videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-top: 3%;
+}
+
+.gmain .videos div {
+    width: 97%;
+    height: 2.5in;
+    display: grid;
+    place-items: center;
+}
+
+.gmain .videos div a img {
+    height: 60px;
+    width: 60px;
+}
+
+.gmain .videos div a:hover {
+    border-radius: 100%;
+    background-color: #e7272d;
+}
+
+.gmain2 {
+    background-color: #f3eded;
+    text-align: center;
+    padding: 6% 12%;
+
+}
+
+.gmain2 .headings2 {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.gmain2 .headings2 h1 {
+    font-size: 45px;
+    padding: 10px 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.gmain2 .headings2 p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px 0px 10px 70px;
+    width: 85%;
+}
+
+
+.gmain2 .gimages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 5%;
+}
+
+.gmain2 .gimages img {
+    width: 95%;
+    height: 2.5in;
+}
+    </style>
+</head>
+<body>
+    <div class="gallery_first">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Images/restaurant.png" alt="logo">
+                <p>Lakshya's Restaurant</p>
+            </div>
+    
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Recipes.html">Recipes</a></li>
+                <li><a href="Reservation.html">Reservation</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <h1 class="head">Gallery</h1>
+
+    </div>
+
+    <div class="gmain">
+
+        <section class="headings">
+            <h3>Our Gallery</h3>
+            <h1>Awesome Place Good Decoration To Spend Quality Time</h1>
+        </section>
+
+        <section class="videos">
+          <div style="background: url('https://source.unsplash.com/750x750/?restaurant') 10% 20% no-repeat; background-size:cover;">
+            <a href="https://www.youtube.com/watch?v=MvXx8yTVNDE" target="_blank"><img src="Images/play_btn.png"></a>
+          </div>
+
+          <div style="background: url('https://source.unsplash.com/751x750/?restaurant') 10% 20% no-repeat; background-size:cover;">
+            <a href="https://www.youtube.com/watch?v=MvXx8yTVNDE" target="_blank"><img src="Images/play_btn.png"></a>
+          </div>
+
+          <div style="background: url('https://source.unsplash.com/752x750/?restaurant') 10% 20% no-repeat; background-size:cover;">
+            <a href="https://www.youtube.com/watch?v=MvXx8yTVNDE" target="_blank"><img src="Images/play_btn.png"></a>
+          </div>
+        </section>
+    
+    </div>
+
+    <div class="gmain2">
+        <section class="headings2">
+            <h1>Lets Check Out Some More</h1>
+            <p>Good restaurant design is about achieving equilibrium between the food, service, and design. The design of a restaurant should embrace the identity of the chef, the nature of the cuisine, and the context of the restaurant itself.</p>
+        </section>
+
+        <section class="gimages">
+            <img src="https://source.unsplash.com/700x700/?restaurant" alt="img1">
+            <img src="https://source.unsplash.com/700x701/?restaurant" alt="img2">
+            <img src="https://source.unsplash.com/700x702/?restaurant" alt="img3">
+            <img src="https://source.unsplash.com/700x703/?restaurant" alt="img4">
+            <img src="https://source.unsplash.com/700x704/?restaurant" alt="img5">
+            <img src="https://source.unsplash.com/700x705/?restaurant" alt="img6">
+            <img src="https://source.unsplash.com/700x706/?restaurant" alt="img7">
+            <img src="https://source.unsplash.com/700x707/?restaurant" alt="img8">
+            <img src="https://source.unsplash.com/700x708/?restaurant" alt="img9">
+            
+        </sectoin>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_div">
+            <h1 class="footer_h1">ADDRESS:</h1>
+            <p class="footer_para">Lakshya's Restaurant</p>
+            <p class="footer_para">G.T. Road Phagwara, Punjab 144603</p>
+        </div>
+
+        <div class="footer_div">
+            <h1 class="footer_h1">RESERVATION:</h1>
+            <p class="footer_para">000-111-222</p>
+            <p class="footer_para">contact@Lakshya's Restaurant.com</p>
+        </div>
+
+        <div class="footer_div">
+            <h1 class="footer_h1">OPEN HOURS:</h1>
+            <p class="footer_para">Monday - Friday: 10AM - 11PM</p>
+            <p class="footer_para">Saturday - Sunday: 9AM - 1PM</p>
+        </div>
+
+        <div class="footer_div one">
+            <p class="footer_para">Copywrite &copy All rigths reserved. Designed and developed by Lakshya</p>
+        </div>
+    </footer>
+
+</body>
+</html>
